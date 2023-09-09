@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HealthMonitor</string>
+    <!-- Sign Measurement -->
+    <!-- Button labels -->
+    <string name="btn_heart_rate_label">Measure Heart Rate</string>
+    <string name="btn_resp_rate_label">Measure Respiratory Rate</string>
+    <string name="btn_add_symptoms_label">Add Symptoms</string>
+
+    <!-- Symptom Data -->
+    <string name="txv_symptom_heading">Symptom Logging Page</string>
+    <!-- Button labels -->
+    <string name="btn_upload_data_label">Upload Data</string>
+    <!-- Spinner data -->
+    <string-array name="symptoms_array">
+        <item>Nausea</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Sore Throat</item>
+        <item>Fever</item>
+        <item>Muscle Ache</item>
+        <item>Loss of Smell or Taste</item>
+        <item>Cough</item>
+        <item>Shortness of Breath</item>
+        <item>Feeling tired</item>
+    </string-array>
+</resources>
