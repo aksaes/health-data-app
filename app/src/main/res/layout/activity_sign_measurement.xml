@@ -7,23 +7,14 @@
     android:textAlignment="center"
     tools:context=".activities.SignMeasurementActivity">
 
-    <androidx.camera.view.PreviewView
-        android:id="@+id/viewFinder"
-        android:layout_width="177dp"
-        android:layout_height="161dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_heart_rate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btn_heart_rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
+        android:layout_marginTop="148dp"
         android:text="@string/btn_heart_rate_label"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +34,7 @@
         android:id="@+id/btn_add_symptoms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="96dp"
         android:text="@string/btn_add_symptoms_label"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,14 +43,15 @@
 
     <TextView
         android:id="@+id/txv_signs"
-        android:layout_width="233dp"
-        android:layout_height="48dp"
+        android:layout_width="288dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="44dp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/btn_add_symptoms"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_resp_rate"
-        app:layout_constraintVertical_bias="0.699" />
+        app:layout_constraintVertical_bias="0.692" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
