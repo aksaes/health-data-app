@@ -7,4 +7,57 @@
     android:layout_height="match_parent"
     tools:context=".activities.TrafficDataActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <EditText
+      android:id="@+id/startAddressEditText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="96dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="Start Address"
+      app:layout_constraintBottom_toTopOf="@+id/getTrafficDataButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <EditText
+      android:id="@+id/endAddressEditText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="76dp"
+      android:ems="10"
+      android:inputType="text"
+      android:text="End Address"
+      app:layout_constraintBottom_toTopOf="@+id/getTrafficDataButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/startAddressEditText"
+      app:layout_constraintVertical_bias="0.003" />
+
+  <Button
+      android:id="@+id/getTrafficDataButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/btn_get_workload_label"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.808" />
+
+  <TextView
+      android:id="@+id/resultTextView"
+      android:layout_width="287dp"
+      android:layout_height="70dp"
+      android:layout_marginBottom="76dp"
+      app:layout_constraintBottom_toTopOf="@+id/getTrafficDataButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/endAddressEditText"
+      app:layout_constraintVertical_bias="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

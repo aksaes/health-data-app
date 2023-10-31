@@ -5,6 +5,8 @@
     <string name="btn_heart_rate_label">Measure Heart Rate</string>
     <string name="btn_resp_rate_label">Measure Respiratory Rate</string>
     <string name="btn_add_symptoms_label">Add Symptoms</string>
+    <string name="btn_generate_workload_label">Generate Workload</string>
+    <string name="btn_get_workload_label">Get Workload</string>
 
     <!-- Symptom Data -->
     <string name="txv_symptom_heading">Symptom Logging Page</string>

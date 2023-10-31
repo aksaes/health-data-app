@@ -48,6 +48,7 @@ public class SignMeasurementActivity extends AppCompatActivity implements Sensor
         Button measureHeartRateButton = findViewById(R.id.btn_heart_rate);
         Button measureRespiratoryRateButton = findViewById(R.id.btn_resp_rate);
         Button addSymptomsButton = findViewById(R.id.btn_add_symptoms);
+        Button generateWorkloadButton = findViewById(R.id.btn_generate_workload);
         resultTextView = findViewById(R.id.txv_signs);
 
         addSymptomsButton.setOnClickListener(view -> {
@@ -57,6 +58,13 @@ public class SignMeasurementActivity extends AppCompatActivity implements Sensor
                     SymptomDataActivity.class);
             intent.putExtra("health_data", healthData);
             startActivity(intent); // Start the SymptomDataActivity
+        });
+
+        generateWorkloadButton.setOnClickListener(view -> {
+            resultTextView.setText("");
+            Intent intent = new Intent(SignMeasurementActivity.this,
+                    TrafficDataActivity.class);
+            startActivity(intent);
         });
 
         measureHeartRateButton.setOnClickListener((view -> {
